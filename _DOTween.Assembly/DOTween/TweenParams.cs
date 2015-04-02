@@ -230,7 +230,7 @@ namespace DG.Tweening
         /// Called the moment the tween reaches its final forward position, loops included</summary>
         public TweenParams OnComplete(TweenCallback action)
         {
-            this.onComplete = action;
+            this.onComplete += action;
             return this;
         }
 

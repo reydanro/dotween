@@ -266,7 +266,7 @@ namespace DG.Tweening
         {
             if (!t.active) return t;
 
-            t.onComplete = action;
+            t.onComplete += action;
             return t;
         }
 
